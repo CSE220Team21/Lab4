@@ -1,0 +1,20 @@
+#Mike Mayr (MMayr15), Chalie Crow (LevenBravo)
+#Team 21
+#Makefile
+
+all: Lab4 clean
+
+Lab4: main.o Line.o Print.o Scanner.o Token.o
+				g++ main.o Line.o Print.o Scanner.o Token.o -o Lab4
+main.o: main.cpp
+		g++ -c main.cpp
+Line.o: Line.cpp
+		g++ -c Line.cpp
+Print.o: Print.cpp
+		g++ -c Print.cpp
+Scanner.o: Scanner.cpp
+		g++ -c Scanner.cpp
+Token.o: Token.cpp
+		g++ -c Token.cpp
+clean:
+		rm -rf *.o
