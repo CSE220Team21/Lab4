@@ -1,6 +1,6 @@
-#Mike Mayr (MMayr15), Chalie Crow (LevenBravo)
-#Team 21
-#Makefile
+//Mike Mayr (MMayr15), Chalie Crow (LevenBravo)
+//Team 21
+//Makefile
 
 all: Lab4 clean
 
