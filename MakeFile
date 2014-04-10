@@ -25,4 +25,4 @@ bTree.o: bTree.cpp
 	g++ -c bTree.cpp
 	
 clean:
-		rm -rf *.o
+	rm -rf *.o
