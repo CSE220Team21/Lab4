@@ -41,7 +41,7 @@ int main(int argc, const char * argv[])
             //move "delete token;" to an else statement
             if(token->getCode() == IDENTIFIER)
             {
-             tree.addLeafToTree(token, scanner.getLineNumber());   
+             tree.addLeafToTree(token, scanner.getLineCount());   
             }
             else
             {
