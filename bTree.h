@@ -28,5 +28,5 @@ class bTree
     void recursivePrintTree(Token *nodeToken);
     
     Token *root;
-}
+};
 #endif
