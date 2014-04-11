@@ -1,7 +1,7 @@
 //Mike Mayr (MMayr15), Chalie Crow (LevenBravo)
 //Team 21
 //https://github.com/CSE220Team21/Lab4
-//bTree.cpp
+//LinkedList.h
 
 #ifndef _Lab4_LinkedList
 #define _Lab4_LinkedList
