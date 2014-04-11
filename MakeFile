@@ -1,11 +1,14 @@
 //Mike Mayr (MMayr15), Chalie Crow (LevenBravo)
 //Team 21
-//Makefile
+//https://github.com/CSE220Team21/Lab4
+//MakeFile
 
-all: Lab4 clean
+all: Lab4
 
-Lab4: main.o Line.o Print.o Scanner.o Token.o bTree.o
-	g++ main.o Line.o Print.o Scanner.o Token.o bTree.o -o Lab4
+Lab4: main.o Print.o Scanner.o Token.o bTree.o LinkedList.o
+	g++ main.o Print.o Scanner.o Token.o bTree.o LinkedList.o -o Lab4
+	
+	
 main.o: main.cpp
 	g++ -c main.cpp
 	
