@@ -32,7 +32,7 @@ private:
     string tokenString;
     //What variables and methods am I missing to implement a binary tree.
     Token *leftLeaf;
-    Token *rightLeaf
+    Token *rightLeaf;
     LinkedList lineCount;
     
 public:
