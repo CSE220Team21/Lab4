@@ -30,7 +30,7 @@ class bTree
     
   private:
     void recursiveAddLeafToTree(Token *token, Token *nodeToken, int lineCount);
-    void recursiveDestroyTree(Token *nodeToken);
+    void recursivekillTree(Token *nodeToken);
     void recursivePrintTree(Token *nodeToken);
     
     Token *root;
