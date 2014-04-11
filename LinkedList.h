@@ -17,17 +17,17 @@ class LinkedList
 
 	private:
 		int lineCount; //integer for line number
-		LinkedList *nextLine; //pointer for next object
-		LinkedList *previousLine; //pointer for previous object
-		LinkedList *currentLine; //pointer for current object
+		LinkedList *followingObj; //pointer for next object
+		LinkedList *leadingObj; //pointer for previous object
+		LinkedList *presentObj; //pointer for current object
 
 	public:
 		LinkedList(); //constructor
 		~LinkedList(); //destructor
 		
 		void addLineToList(int newLine);
-		void printList();
 		void killList();
+		void printList();
 		void set(int line_Number);
 		LinkedList* getNextLine();
 		int getLine();
