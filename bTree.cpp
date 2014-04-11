@@ -3,6 +3,9 @@
 //https://github.com/CSE220Team21/Lab4
 //bTree.cpp
 
+#include "bTree.h"
+
+
 bTree::bTree() //bTree constructor
 {
   root = NULL;
