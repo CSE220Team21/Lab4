@@ -60,7 +60,7 @@ public:
     void setLeftLeaf(Token *newToken);
     Token* getRightLeaf();
     void setRightLeaf(Token *newToken);
-    void setLine(int Line);
+    void setLine(int lineCount);
 };
 
 #endif /* defined(__Lab4__Token__) */
