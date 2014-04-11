@@ -9,9 +9,6 @@ Lab4: main.o Line.o Print.o Scanner.o Token.o bTree.o
 main.o: main.cpp
 	g++ -c main.cpp
 	
-Line.o: Line.cpp
-	g++ -c Line.cpp
-	
 Print.o: Print.cpp
 	g++ -c Print.cpp
 	
@@ -23,6 +20,9 @@ Token.o: Token.cpp
 	
 bTree.o: bTree.cpp
 	g++ -c bTree.cpp
+
+LinkedList.o: LinkedList.cpp
+	g++ -c LinkedList.cpp
 	
 clean:
 	rm -rf *.o
