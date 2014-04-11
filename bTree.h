@@ -8,12 +8,7 @@
 
 #include "common.h"
 #include "Token.h"
-#include "LinkedList.h"
 
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <iostream.h>
 
 using namespace std;
 
