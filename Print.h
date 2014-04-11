@@ -22,13 +22,13 @@ public:
     
     void printLine(char line[]);
     void printToken(Token *token);
-
-    void printPageHeader();
+    void printPageHeader2();
     
 private:
     string sourceFileName;
     string currentDate;
     int pageNumber;
+    void printPageHeader();
 
 };
 
