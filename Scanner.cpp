@@ -1,4 +1,6 @@
 //
+//  Charles Crow (LevenBravo  Mike Mayr (MMayr15)
+//  
 //  Scanner.cpp
 //  Lab4
 //
