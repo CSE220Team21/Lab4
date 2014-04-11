@@ -58,10 +58,10 @@ public:
     LinkedList getList();
     void setList(int newLine);
     //------------------------------
-    Token* getLeftLeaf();
-    void setLeftLeaf(Token *newToken);
-    Token* getRightLeaf();
-    void setRightLeaf(Token *newToken);
+    Token* getleftLeaf();
+    void setleftLeaf(Token *newToken);
+    Token* getrightLeaf();
+    void setrightLeaf(Token *newToken);
     void setLine(int lineCount);
 };
 
