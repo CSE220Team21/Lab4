@@ -27,7 +27,7 @@ class LinkedList
 		
 		void addLineToList(int newLine);
 		void printList();
-		void deleteList();
+		void killList();
 		void set(int line_Number);
 };
 
