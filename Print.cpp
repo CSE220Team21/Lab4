@@ -29,7 +29,7 @@ Print::Print(char source_name[], char date[])
 }
 Print::~Print()
 {
-    
+    //deconstructor
 }
 void Print::printLine(char line[])
 {
