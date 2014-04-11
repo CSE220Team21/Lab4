@@ -3,7 +3,7 @@
 #https://github.com/CSE220Team21/Lab4
 #MakeFile
 
-all: Lab4
+all: Lab4 clean
 
 Lab4: main.o Print.o Scanner.o Token.o bTree.o LinkedList.o
 	g++ main.o Print.o Scanner.o Token.o bTree.o LinkedList.o -o Lab4
