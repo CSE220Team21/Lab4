@@ -38,7 +38,7 @@ void bTree::recursiveAddLeafToTree(Token *token, Token *nodeToken, int lineCount
 	{
 		if(nodeToken->getleftLeaf() != NULL)
 		{
-			revursiveAddLeafToTree(token, nodeToken->getleftLeaf(), lineCount);
+			recursiveAddLeafToTree(token, nodeToken->getleftLeaf(), lineCount);
 		}
 		else
 		{
