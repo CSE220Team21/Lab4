@@ -29,6 +29,8 @@ class LinkedList
 		void printList();
 		void killList();
 		void set(int line_Number);
+		LinkedList* getNextLine();
+		int getLine();
 };
 
 #endif
