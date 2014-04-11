@@ -49,6 +49,11 @@ public:
     string getTokenString();
     void setNextToken(Token *newToken);
     Token* getNextToken();
+    Token* getLeftLeaf();
+    void setLeftLeaf(Token *newToken);
+    Token* getRightLeaf();
+    void setRightLeaf(Token *newToken);
+    void setLine(int Line);
 };
 
 #endif /* defined(__Lab4__Token__) */
