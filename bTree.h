@@ -20,7 +20,7 @@ class bTree
     
     void addLeafToTree(Token *token, int lineCount);
     void killTree();  //deconstructor
-    void PrintTree();  //prints
+    void printTree();  //prints
     
   private:
     void recursiveAddLeafToTree(Token *token, Token *nodeToken, int lineCount);
