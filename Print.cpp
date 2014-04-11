@@ -62,7 +62,7 @@ void Print::printPageHeader()
     putchar(FORM_FEED_CHAR);
     printf("Page    %d  %s  %s\n\n", ++pageNumber, sourceFileName.c_str(), currentDate.c_str());
 }
-void Print::printHeader2()
+void Print::printPageHeader2()
 {
     puts("");
     puts("Cross Reference Information");
