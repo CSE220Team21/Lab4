@@ -64,9 +64,9 @@ void LinkedList::deleteList() //deletes objects
 	}
 } //end deleteList()
 
-void LinkedList::set(int line_Number)
+void LinkedList::set(int lineCount)
 {
-	this->lineCount = line_Number;
+	this->lineCount = lineCount;
 }
 
 LinkedList* LinkedList::getNext() {
