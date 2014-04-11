@@ -32,7 +32,7 @@ void bTree::addLeafToTree(Token *token, int lineCount)
 }
 void bTree::recursiveAddLeafToTree(Token *token, Token *nodeToken, int lineCount)
 {
-	string first = noodeToken->getTokenString();
+	string first = nodeToken->getTokenString();
 	string second = nodeToken->getTokenString();
 	if(first.compare(second) < 0)
 	{
