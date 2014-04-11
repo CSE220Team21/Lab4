@@ -24,7 +24,7 @@ class LinkedList
 		LinkedList(); //constructor
 		~LinkedList(); //destructor
 		
-		void addLeafToList(int newLine);
+		void addLineToList(int newLine);
 		void printList();
 		void deleteList();
 		void set(int line_Number);
