@@ -25,12 +25,14 @@ class bTree
     ~bTree();
     
     void addLeafToTree(Token *token, int lineCount);
-    
     void killTree();  //deconstructor
-    
     voidPrintTree()  //prints
     
   private:
+    void recursiveAddLeafToTree(Token *token, Token *nodeToken, int lineCount);
+    void recursiveDestroyTree(Token *nodeToken);
+    void recursivePrintTree(Token *nodeToken);
     
-    void //need to add private stuff
+    Token *root;
 }
+#endif
