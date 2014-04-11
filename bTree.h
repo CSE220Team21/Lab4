@@ -3,8 +3,8 @@
 //https://github.com/CSE220Team21/Lab4
 //bTree
 
-#ifndef B_TREE
-#define B_TREE
+#ifndef __Lab4__bTree__
+#define __Lab4__bTree__
 
 #include "common.h"
 #include "Token.h"
