@@ -5,8 +5,8 @@
 //  Created by Bryce Holton.
 //
 
-#ifndef Lab4_Scanner_h
-#define Lab4_Scanner_h
+#ifndef __Lab4__Scanner__h
+#define __Lab4__Scanner__h
 
 #include "Scanner.h"
 #include "common.h"
