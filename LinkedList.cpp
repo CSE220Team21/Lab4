@@ -52,7 +52,7 @@ void LinkedList::printList()
 	} //end while
 } //end method printList
 
-void LinkedList::deleteList() //deletes objects
+void LinkedList::killList() //deletes objects
 {
 	LinkedList *tempPtr;
 	tempPtr = NULL;
