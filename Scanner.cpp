@@ -81,7 +81,7 @@ bool Scanner::getSourceLine(char source_buffer[])
     if (fgets(source_buffer, MAX_SOURCE_LINE_LENGTH, src_file) != NULL)
     {
         ++lineCount;
-        sprintf(print_buffer, "%4d: %s", line_number, source_buffer);
+        sprintf(print_buffer, "%4d: %s", lineCount, source_buffer);
         print.printLine(print_buffer);
         return true;
     }
@@ -448,7 +448,7 @@ void Scanner::getSpecial(char *str, char *token_ptr, Token *tok)
     tok->setTokenString(string(str));
 }
 
-void getLine()
+void getLine();
 void Scanner::downshiftWord(char word[])
 {
     /*
