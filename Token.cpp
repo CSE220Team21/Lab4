@@ -8,12 +8,16 @@
 #include "Token.h"
 
 Token::Token()
-{
-    //What code do I need here to initialize everything.
+{   
+    leftLeaf = NULL;
+    rightLeaf = NULL;// sets both to NULL 
+    
 }
 Token::~Token()
-{
-    //What code do I need here to free memory
+{   
+    //calls killList deletes each object on the list, going through each object and delete it from the heap
+    //with a bayonette!
+    linkedNode.killList();
 }
 void Token::setCode(TokenCode newCode)
 {
