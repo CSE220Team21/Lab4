@@ -31,6 +31,9 @@ private:
     literal;
     string tokenString;
     //What variables and methods am I missing to implement a binary tree.
+    Token *leftLeaf;
+    Token *rightLeaf
+    LinkedList lineCount;
     
 public:
     Token();
@@ -49,6 +52,10 @@ public:
     string getTokenString();
     void setNextToken(Token *newToken);
     Token* getNextToken();
+    //add getList()-----------------
+    LinkedList getList();
+    void setList(int newLine);
+    //------------------------------
     Token* getLeftLeaf();
     void setLeftLeaf(Token *newToken);
     Token* getRightLeaf();
