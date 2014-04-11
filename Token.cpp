@@ -17,7 +17,7 @@ Token::~Token()
 {   
     //calls killList deletes each object on the list, going through each object and delete it from the heap
     //with a bayonette!
-    linkedNode.killList();
+    count.killList();
 }
 void Token::setCode(TokenCode newCode)
 {
@@ -73,6 +73,13 @@ LinkedList Token::getList()
 {
     return this -> count;
 }
+void Token::setList(int newLine)
+{
+	count.addLineToList(newLine);
+}
+void Token::setLine(int count)
+{
+	this->count.set(count);
 
 void Token::setList
 //What methods am I missing to implement a binary tree.
