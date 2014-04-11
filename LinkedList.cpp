@@ -62,7 +62,7 @@ void LinkedList::killList() //deletes objects
 		this->nextLine = tempPtr->nextLine;
 		delete tempPtr;	
 	}
-} //end deleteList()
+} //end killList()
 
 void LinkedList::set(int lineCount)
 {
