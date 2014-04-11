@@ -73,6 +73,6 @@ LinkedList* LinkedList::getNext() {
 	return this->nextLine;
 }
 
-int LinkedList::getList() {
+int LinkedList::getLine() {
 	return this->lineCount;
 }
