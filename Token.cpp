@@ -80,8 +80,9 @@ void Token::setList(int newLine)
 void Token::setLine(int lineCount)
 {
 	this->lineCount.set(lineCount);
+}
 
-void Token::setList
+//void Token::setList
 //What methods am I missing to implement a binary tree.
 Token *Token::getleftLeaf()
 {
