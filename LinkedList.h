@@ -3,8 +3,8 @@
 //https://github.com/CSE220Team21/Lab4
 //LinkedList.h
 
-#ifndef _Lab4_LinkedList
-#define _Lab4_LinkedList
+#ifndef __Lab4__LinkedList
+#define __Lab4__LinkedList
 
 #include <iostream>
 #include "common.h"
