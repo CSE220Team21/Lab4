@@ -60,7 +60,7 @@ Scanner::Scanner(FILE *source_file, char source_name[], char date[], Print print
     char_table['\''] = QUOTE;
     char_table[EOF_CHAR] = EOF_CODE;
     
-    line_number = 0;
+    lineCount = 0;
     source_line[0] = '\0';
 }
 Scanner::~Scanner()
@@ -80,7 +80,7 @@ bool Scanner::getSourceLine(char source_buffer[])
     
     if (fgets(source_buffer, MAX_SOURCE_LINE_LENGTH, src_file) != NULL)
     {
-        ++line_number;
+        ++lineCount;
         sprintf(print_buffer, "%4d: %s", line_number, source_buffer);
         print.printLine(print_buffer);
         return true;
