@@ -32,7 +32,7 @@ const RwStruct rw_table[9][10] = {
 Scanner::Scanner(FILE *source_file, char source_name[], char date[], Print printer) : print(printer)
 {
     src_file = source_file;
-    line_ptr = NULL;
+    line_ptr = NULL; // set to NULL here in lieu of Header
     strcpy(src_name, source_name);
     strcpy(todays_date, date);
     
