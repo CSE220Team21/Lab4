@@ -4,9 +4,12 @@
 //bTree
 //
 
+#ifndef B_TREE
+#define B_TREE
+
 #include "common.h"
-#include "token.h"
-#include "linkedList.h"
+#include "Token.h"
+#include "LinkedList.h"
 
 
 #include <stdio.h>
@@ -17,5 +20,17 @@ using namespace std;
 
 class bTree
 {
-  
+  public:
+    bTree();
+    ~bTree();
+    
+    void addLeafToTree(Token *token, int lineCount);
+    
+    void killTree();  //deconstructor
+    
+    voidPrintTree()  //prints
+    
+  private:
+    
+    void //need to add private stuff
 }
