@@ -29,9 +29,9 @@ void bTree::addLeafToTree(Token *token, int lineCount)
 }
 void bTree::recursiveAddLeafToTree(Token *token, Token *nodeToken, int lineCount)
 {
-	string 1 = token->getTokenString();
-	string 2 = tokNode->getTokenString();
-	if(1.compare(2) < 0)
+	string first = token->getTokenString();
+	string second = tokNode->getTokenString();
+	if(first.compare(second) < 0)
 	{
 		if(nodeToken->getleftLeaf() != NULL)
 		{
@@ -45,7 +45,7 @@ void bTree::recursiveAddLeafToTree(Token *token, Token *nodeToken, int lineCount
 
 		}
 	}
-	else if(1.compare(2) > 0)
+	else if(first.compare(second) > 0)
 	{
 		if(nodeToken->getrightLeaf() != NULL)
 		{
@@ -59,7 +59,7 @@ void bTree::recursiveAddLeafToTree(Token *token, Token *nodeToken, int lineCount
 
 		}
 	}
-	else if(1.compare(2) == 0)
+	else if(first.compare(second) == 0)
 	{
 		nodeToken->setList(lineCount); //My mistake, figured it out
 		delete token; //remove duplicate token from tree
