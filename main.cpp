@@ -10,6 +10,8 @@
 #include "Print.h"
 #include "Scanner.h"
 #include "Token.h"
+#include "bTree.h"
+#include "LinkedList.h"
 
 FILE *init_lister(const char *name, char source_file_name[], char dte[]);
 void quit_scanner(FILE *src_file, Token *list);
@@ -28,6 +30,7 @@ int main(int argc, const char * argv[])
     FILE *source_file = init_lister(argv[1], source_name, date);
     Print print(source_name, date);
     Scanner scanner(source_file, source_name, date, print);
+    bTree tree; //constructor of bTree.cpp
     
     do
     {
@@ -35,12 +38,23 @@ int main(int argc, const char * argv[])
         print.printToken(token);
         if (token->getCode() != PERIOD && token->getCode() != END_OF_FILE)
         {
-            delete token;
+            //move "delete token;" to an else statement
+            if(token->getCode() == IDENTIFIER)
+            {
+             tree.addLeafToTree(token, scanner.getLineNumber());   
+            }
+            else
+            {
+                delete token;
+            }
         }
     }
     while (token->getCode() != PERIOD && token->getCode() != END_OF_FILE);
     
-    delete token;
+    print.printPageHeader(); //prints the header information
+    tree.printTree(); //prints the binary tree
+    
+    delete token; //deletes last token after printing
     fclose(source_file);
     return 0;
 }
