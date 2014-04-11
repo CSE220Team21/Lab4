@@ -69,7 +69,8 @@ void LinkedList::set(int lineCount)
 	this->lineCount = lineCount;
 }
 
-LinkedList* LinkedList::getNext() {
+LinkedList* LinkedList::getNext() 
+{
 	return this->nextLine;
 }
 
