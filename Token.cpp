@@ -76,3 +76,19 @@ LinkedList Token::getList()
 
 void Token::setList
 //What methods am I missing to implement a binary tree.
+Token *Token::getleftLeaf()
+{
+	return this->leftLeaf;
+}
+void Token::setleftLeaf(Token *newToken)
+{
+	this->leftLeaf = newToken;
+}
+Token *Token::getrightLeaf()
+{
+	return this->rightLeaf;
+}
+void Token::setrightLeaf(Token *newToken)
+{
+	this->rightLeaf = newToken;
+}
