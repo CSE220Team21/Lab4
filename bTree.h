@@ -6,6 +6,7 @@
 #ifndef B_TREE
 #define B_TREE
 
+#include <iostream>
 #include "common.h"
 #include "Token.h"
 
