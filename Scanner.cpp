@@ -65,6 +65,13 @@ Scanner::~Scanner()
 {
     
 }
+
+int Scanner::getLineCount()
+{
+    return lineCount;
+}
+
+
 bool Scanner::getSourceLine(char source_buffer[])
 {
     char print_buffer[MAX_SOURCE_LINE_LENGTH + 9];
@@ -115,7 +122,7 @@ Token* Scanner::getToken()
             getSpecial(token_string, token_ptr, new_token);
             break;
     }
-    
+    new_token->setLine(lineCount);
     return new_token; //What should be returned here?
 }
 char Scanner::getChar(char source_buffer[])
@@ -136,6 +143,7 @@ char Scanner::getChar(char source_buffer[])
         }
         line_ptr = source_buffer;
     }
+    
     
     /*
      Write some code to set the character ch to the next character in the buffer
@@ -437,6 +445,8 @@ void Scanner::getSpecial(char *str, char *token_ptr, Token *tok)
     *token_ptr = '\0';
     tok->setTokenString(string(str));
 }
+
+void getLine()
 void Scanner::downshiftWord(char word[])
 {
     /*
