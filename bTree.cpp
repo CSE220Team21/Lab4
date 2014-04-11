@@ -60,7 +60,7 @@ void bTree::recursiveAddLeafToTree(Token *token, Token *nodeToken, int lineCount
 	}
 	else if(1.compare(2) == 0)
 	{
-		nodeToken->setList(lineCount); //----------------WHAT DID WE NAME THIS???----------------
+		nodeToken->setList(lineCount); //My mistake, figured it out
 		delete token; //remove duplicate token from tree
 	}
 }
@@ -90,7 +90,7 @@ void bTree::recursivePrintTree(Token *nodeToken)
 	{
 		recursivePrintTree(nodeToken->getleftLeaf());
 		printf("%s\t\t\t",nodeToken->getTokenString().c_str() );
-		nodeToken->getList().printList();  //----------------WHAT DID WE NAME THIS???----------------
+		nodeToken->getList().printList();  //My mistake, figured it out
 		cout<<"\n";
 		recursivePrintTree(nodeToken->getrightLeaf());
 	}
