@@ -68,4 +68,11 @@ string Token::getTokenString()
 {
     return this->tokenString;
 }
+
+LinkedList Token::getList()
+{
+    return this -> count;
+}
+
+void Token::setList
 //What methods am I missing to implement a binary tree.
