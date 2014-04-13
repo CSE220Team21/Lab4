@@ -17,9 +17,10 @@ class LinkedList
 
 	private:
 		int lineCount; //integer for line number
-		LinkedList *followingObj; //pointer for next object
-		LinkedList *leadingObj; //pointer for previous object
-		LinkedList *presentObj; //pointer for current object
+		LinkedList *nextLine; //pointer for next object
+		LinkedList *previousLine; //pointer for previous object
+		LinkedList *currentLine; //pointer for current object
+    
 
 	public:
 		LinkedList(); //constructor
@@ -32,5 +33,4 @@ class LinkedList
 		LinkedList* getNextLine();
 		int getLine();
 };
-
 #endif
