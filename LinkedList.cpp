@@ -77,3 +77,17 @@ LinkedList* LinkedList::getNextLine()
 int LinkedList::getLine() {
 	return this->lineCount;
 }
+
+void LinkedList::set(int lineCount)
+{
+	this->lineCount = lineCount;
+}
+
+LinkedList* LinkedList::getNextLine() 
+{
+	return this->nextLine;
+}
+
+int LinkedList::getLine() {
+	return this->lineCount;
+}
